@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ordersDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/OrderDetailsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbarlayout"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.7"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listOrderDetails"
+        android:layout_below="@+id/OrderDetailsToolbar"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/callnow"
+        android:layout_height="match_parent">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/confirmbutton"
+        android:id="@+id/alertlayout">
+
+        <TextView
+            android:id="@+id/orderalert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press button when order is delivered "
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_redo_black_24dp"/>
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/callnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alertlayout"
+        android:text="CALL"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_marginBottom="4dp"
+        app:shadowHeight="0dp"
+        app:shadowColor="@color/toolbar_end"
+        app:fButtonColor="@color/bagroungdelete"
+        app:cornerRadius="0dp"
+        />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/confirmbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Order is pending"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:shadowHeight="1dp"
+        app:shadowColor="@color/toolbar_end"
+        app:fButtonColor="@color/toolbar_baz"
+        app:cornerRadius="0dp"
+        />
+
+</RelativeLayout>

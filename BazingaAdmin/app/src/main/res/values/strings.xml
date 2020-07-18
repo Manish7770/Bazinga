@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BazingaAdmin</string>
+    <string name="title_activity_orders">Orders</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="spring_rolls">Spring Rolls</string>
+    <string name="food_price">FOOD PRICE:</string>
+    <string name="rs_100_00">Rs. 100.00</string>
+    <string name="packing_charge">PACKING CHARGE:</string>
+    <string name="rs_4_00">Rs. 4.00</string>
+    <string name="quantity">QUANTITY:</string>
+    <string name="_5">5</string>
+    <string name="total_price">TOTAL PRICE:</string>
+    <string name="rs_520_00">Rs. 520.00</string>
+</resources>

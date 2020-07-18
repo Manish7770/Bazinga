@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "149508965246",
+    "firebase_url": "https://bazinga-urban-bites-6dd10.firebaseio.com",
+    "project_id": "bazinga-urban-bites-6dd10",
+    "storage_bucket": "bazinga-urban-bites-6dd10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149508965246:android:ae7d3ee381cf1e8d",
+        "android_client_info": {
+          "package_name": "com.manish.bazinga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149508965246-q52kgg5es0k27j02mgc09ah56uahplp4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "149508965246-85dgp0cr0rcqlrag2ln3ev472t6s61vc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "149508965246-mf9aen8nf3q3be0bj4361e7rri0as3b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manish.bazinga",
+            "certificate_hash": "dbdfeb16b8de95e098deb38d8fcc72b5c5e87693"
+          }
+        },
+        {
+          "client_id": "149508965246-i6dcueka6p0rfk5kkodehpi0sc5va16l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm4hpOr9syfyDLmXCE-LdyQxMe1oS0PII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149508965246-q52kgg5es0k27j02mgc09ah56uahplp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149508965246:android:0bdb1186943eabcf",
+        "android_client_info": {
+          "package_name": "com.manish.bazingaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149508965246-g81shihniuq8shtdtsvb3r3mt0b9193s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manish.bazingaadmin",
+            "certificate_hash": "dbdfeb16b8de95e098deb38d8fcc72b5c5e87693"
+          }
+        },
+        {
+          "client_id": "149508965246-q52kgg5es0k27j02mgc09ah56uahplp4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "149508965246-85dgp0cr0rcqlrag2ln3ev472t6s61vc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "149508965246-i6dcueka6p0rfk5kkodehpi0sc5va16l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm4hpOr9syfyDLmXCE-LdyQxMe1oS0PII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149508965246-q52kgg5es0k27j02mgc09ah56uahplp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

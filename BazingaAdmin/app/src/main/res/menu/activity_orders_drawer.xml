@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Orders" />
+        <item
+            android:id="@+id/prevOrders"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Previous Orders" />
+        <item
+            android:id="@+id/setmenu"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Set Menu" />
+        <item
+            android:id="@+id/daymenu"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Day's Menu" />
+        <item
+            android:id="@+id/nightmenu"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Night's Menu" />
+        <item
+            android:id="@+id/sale"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Sale" />
+        <item
+            android:id="@+id/saleexcel"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Sale Download" />
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Sign Out" />
+
+    </group>
+
+</menu>

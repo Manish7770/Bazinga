@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:background="@drawable/toolbarlayout"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ImageView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:src="@drawable/usericon"
+        android:id="@+id/usericon"/>
+
+    <TextView
+        android:paddingLeft="28dp"
+        android:id="@+id/nametextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif"
+        android:layout_below="@+id/usericon"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Welcome To Bazinga"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

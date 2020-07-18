@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeNightMenu"
+    tools:layout_editor_absoluteY="20dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/FoodListToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbarlayout"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutfood"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="180dp">
+
+        <ImageView
+
+            android:id="@+id/imageviewfoodlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textviewfoodlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#4f0e0d0e"
+            android:gravity="center"
+            android:text="Name of Menu"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="173dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="234dp">
+
+        <ImageView
+            android:id="@+id/foodlistimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:id="@+id/foodlistdark"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0"
+            android:background="@color/cardview_dark_background"
+            android:backgroundTint="@color/cardview_dark_background" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/recyclerfood"
+            android:layout_width="fill_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressfoodlist"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

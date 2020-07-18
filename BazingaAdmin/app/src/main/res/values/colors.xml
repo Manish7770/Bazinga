@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004d40</color>
+    <color name="colorPrimaryDark">#449424</color>
+    <color name="colorAccent">#029a62</color>
+
+    <color name="Panache">#b9f6ca</color>
+    <color name="EdgeWater">#C4DDC7</color>
+    <color name="SnowDrift">#E5E5DF</color>
+    <color name="AquaSqueeze">#D5E8D5</color>
+    <color name="MountainMeadov">#7fc23a</color>
+    <color name="VistaBlue">#96C6A9</color>
+    <color name="bglight">#DCEDC8</color>
+    <color name="white">#ffffff</color>
+
+    <color name="OverlayBackground">#7f333639</color>
+    <color name="OverlayActionBar">#0e0d0e</color>
+    <color name="green">#08ca54</color>
+
+    <color name="backimage">#4f0e0d0e</color>
+
+    <color name="darkblue">#00bfff</color>
+    <color name="yellow">#FFFCD118</color>
+    <color name="red">#FFC60E32</color>
+    <color name="bagroungdelete">#fa315b</color>
+    <color name="toolbar_baz">#7fc23a</color>
+    <color name="toolbar_end">#459525</color>
+    <color name="statusbar">#449424</color>
+</resources>

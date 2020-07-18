@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manish.bazingaadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        tools:replace="android:icon"
+        android:icon="@mipmap/ic_launcher_bazingaicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_bazingaround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SignInActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adminlogin"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".Orders"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_orders"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ordersDetails"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".Sale"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".previousOrders"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".DayMenu"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".ChangeDayMenu"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".NightMenu"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".ChangeNightMenu"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".SetMenu"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".salexcel"
+            android:screenOrientation="sensorPortrait"/>
+
+        <service android:name=".Service.MyFirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
