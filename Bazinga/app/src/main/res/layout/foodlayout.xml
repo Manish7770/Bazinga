@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/foodicon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food001"/>
+
+
+        <TextView
+            android:id="@+id/name_of_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Name of Food"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="110dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_of_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_of_food"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="8dp"
+            android:text="Rs. 60.00"
+            android:textColor="@color/fbutton_color_asbestos"
+            android:textSize="14sp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/outofstock"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="42dp"
+            app:fButtonColor="@color/bagroungdelete"
+            android:text="OUT OF STOCK"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            app:shadowHeight="0dp"
+            android:textColor="@android:color/white"
+            app:cornerRadius="5dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/add_to_cart"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="42dp"
+            app:fButtonColor="@color/green"
+            android:text="ADD"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            app:shadowHeight="0dp"
+            android:textColor="@android:color/white"
+            app:cornerRadius="5dp" />
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="42dp"
+            android:elevation="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            app:backGroundColor="@color/MountainMeadov"
+            android:id="@+id/elegantnumberbutton"
+            android:layout_alignParentEnd="true" android:visibility="invisible"
+            android:layout_marginEnd="15dp"
+            app:initialNumber="0"
+            app:finalNumber="30">
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

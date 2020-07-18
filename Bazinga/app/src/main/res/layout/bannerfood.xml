@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BannerFood"
+    tools:layout_editor_absoluteY="20dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/BannerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbarlayout"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutbanner"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bannermenu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+           />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bannermenuname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#4f0e0d0e"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="173dp" />
+
+
+    </RelativeLayout>
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/bannerbuttonforcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        app:backgroundTint="@color/AquaSqueeze"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:layout_anchor="@id/relativelayoutbanner"
+        app:layout_anchorGravity="bottom|right|end"
+
+        />
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="249dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bannerfoodicon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:id="@+id/bannerfoodname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="110dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bannerfoodprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bannerfoodname"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="@color/fbutton_color_asbestos"
+                android:textSize="14sp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/banneradd_to_cart"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="42dp"
+                app:fButtonColor="@color/green"
+                android:text="ADD"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                app:shadowHeight="0dp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/outofstock"
+                android:layout_width="105dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="42dp"
+                app:fButtonColor="@color/bagroungdelete"
+                android:text="OUT OF STOCK"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                app:shadowHeight="0dp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="5dp" />
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="42dp"
+                android:elevation="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                app:backGroundColor="@color/MountainMeadov"
+                android:id="@+id/bannerelegantnumberbutton"
+                android:layout_alignParentEnd="true" android:visibility="invisible"
+                android:layout_marginEnd="15dp"
+                app:initialNumber="0"
+                app:finalNumber="30">
+
+            </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

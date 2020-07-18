@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manish.bazingalnmiit.navigationhome">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsetoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            >
+
+            <com.manish.bazingalnmiit.ViewPagerCustomDuration
+                app:layout_collapseMode="parallax"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/toolbarlayout"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"
+                />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/appbarlayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/navigationimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/navigationdark"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0"
+            android:background="@color/cardview_dark_background"
+            android:backgroundTint="@color/cardview_dark_background" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclermenu"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/navigationimage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:src="@drawable/home"
+            android:visibility="visible"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageViewtint"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.6"
+            android:background="@color/cardview_dark_background"
+            android:backgroundTint="@color/cardview_dark_background" />
+
+        <TextView
+            android:id="@+id/closed"
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textStyle="italic|bold"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30sp"
+            android:visibility="visible"
+            android:layout_marginTop="120dp"
+            android:text="Bazinga is closed"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <com.andremion.counterfab.CounterFab
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:elevation="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/AquaSqueeze"
+        app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

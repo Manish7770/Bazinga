@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdersList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/orderListToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbarlayout"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.7"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_dark_background" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOrders"
+        android:layout_below="@id/orderListToolbar"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/waitamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wait a minute!!!"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/noorders"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/noorders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="No Orders"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressorderlist"
+        android:indeterminateTint="@android:color/white"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

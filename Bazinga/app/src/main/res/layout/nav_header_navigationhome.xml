@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:background="@drawable/toolbarlayout"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ImageView
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:src="@drawable/usericon"
+        android:id="@+id/usericon"/>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:id="@+id/nametextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif"
+        android:layout_below="@+id/usericon"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Welcome to Bazinga"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif"
+        android:layout_below="@+id/nametextview"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Bon Appetite"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

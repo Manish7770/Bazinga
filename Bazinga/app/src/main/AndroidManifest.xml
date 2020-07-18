@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manish.bazingalnmiit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:icon"
+
+        android:icon="@mipmap/ic_launcher_bazingaicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_bazingaround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".navigationhome"
+            android:label="@string/title_activity_navigationhome"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FoodList"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Cart"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".OrdersList"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".OrderDetails"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".BannerFood"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Address"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".About_us"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Privacy"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".TandC"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Refund"
+            android:screenOrientation="sensorPortrait" />
+
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".contact_us"
+            android:screenOrientation="sensorPortrait"
+            />
+    </application>
+
+</manifest>

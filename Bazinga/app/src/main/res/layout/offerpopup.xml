@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.9"
+        android:background="@drawable/toolbarlayout"
+        />
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:background="@drawable/circlebackground"
+        />
+
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFFER"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="110dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginTop="30dp"
+        android:layout_width="230dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        android:text="1. Get a 500ml cocacola free on minimum order worth Rs.550"
+        android:layout_gravity="center"
+        android:layout_below="@id/offer"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cokepng2"/>
+
+
+</RelativeLayout>

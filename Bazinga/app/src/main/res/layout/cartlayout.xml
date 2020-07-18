@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/deletebground"
+        android:background="@color/bagroungdelete"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:src="@drawable/ic_delete_white_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/deleteicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/deleteicon"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewforeground"
+        android:background="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cartimage"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="9dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/blank"
+            android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="9"
+                android:layout_marginTop="2dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cartitemname"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="FoOD 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="13sp"
+                        android:text="PRICE:"/>
+                    <TextView
+                        android:id="@+id/cartitemprice"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:text="Rs 10000.00"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="13sp"
+                        android:text="PACKING CHARGES:"/>
+                    <TextView
+                        android:id="@+id/packingcharges"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:text="Rs 10000.00"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:text="QUANTITY:"/>
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:elevation="3dp"
+                        android:layout_marginTop="3dp"
+                        app:backGroundColor="@color/MountainMeadov"
+                        android:id="@+id/buttonquantitycart"
+                        app:initialNumber="0"
+                        app:finalNumber="30">
+
+                    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
